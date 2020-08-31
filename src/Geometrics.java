@@ -2,22 +2,22 @@ public class Geometrics {
 
     public static void main(String[] args) {
 
-        System.out.println(rectangle(10.0, 5.0));
-        System.out.println(perimeterSquare(3));
-        System.out.println(squareArea(5));
-        System.out.println(perimeterRectangle(4, 9));
-        System.out.println(zoneSphere(6, 16, 8));
-        System.out.println(cylinderSphere(99));
-        System.out.println(ungula(45, 77));
-
+        System.out.println("Results");
+        System.out.println("=======================");
+        System.out.println("This is the rectangle: " + rectangle(4, 5));
+        System.out.println("This is the perimeter square: " + perimeterSquare(10));
+        System.out.println("This is the square area: " + squareArea(10));
+        System.out.println("This is the perimeter rectangle: " + perimeterRectangle(2, 6));
+        System.out.println("This is the zone square: " + zoneSphere(10, 20,30 ));
+        System.out.println("This is the cylinder square: " + cylinderSphere(15));
+        System.out.println("This is the ungula: " + ungula(8, 9));
+        System.out.println("This is the circumference: " + circumference(4, 5));
 
     }
 
     private static double rectangle (double x, double y){
-        // area ... Fläche
         return x*y;
     }
-
     private static double perimeterSquare (double x){
         return 4*x;
     }
@@ -35,6 +35,9 @@ public class Geometrics {
     }
     private static double ungula (double x3, double z3){
         return (2 * x3 * z3)/3;
+    }
+    private static double circumference(double l, double w) {
+        return (l+w)*2;
     }
 
 }
